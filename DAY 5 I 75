@@ -1,0 +1,8 @@
+z = int(input("Enter any Number:"))   #global variable
+def abc():
+  x = int(input("Enter any Number:")) #local variable 
+  def xyz():
+      y = x*z
+      print(f"Value of y =",y)
+  xyz()
+abc()
