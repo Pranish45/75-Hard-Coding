@@ -1,0 +1,11 @@
+def st(a,b,c):
+  if(a>b) and (a>c):
+    return "largest number is a"
+  elif b>a and b>c:
+    return "largest number is b"
+  else:
+    return "largest number is c"
+a=int(input("Enter the first number(a):"))
+b=int(input("Enter the second number(b):"))
+c=int(input("Enter the third number(c):"))
+print(st(a,b,c))
