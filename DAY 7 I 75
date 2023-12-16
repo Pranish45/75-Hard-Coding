@@ -1,0 +1,9 @@
+str=input("Enter the string:")
+g=input("Enter character:")
+for I in str:
+  if I==g:
+      print("yes")
+      break
+  else:
+      print("no")
+      
