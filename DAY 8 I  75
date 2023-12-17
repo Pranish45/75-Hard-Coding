@@ -1,0 +1,7 @@
+def st(a):
+  if a%2==0:
+    return "number is even"
+  else:
+    return "odd"
+a=int(input("Enter any Number:"))
+print(st(a))
