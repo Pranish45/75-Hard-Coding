@@ -1,0 +1,30 @@
+def selection_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        min_index = i
+        for j in range(i + 1, n):
+            if arr[j] < arr[min_index]:
+                min_index = j
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+# Input: First-year percentages of students
+percentage_array = [78.5, 89.2, 67.8, 92.3, 81.0, 76.4, 95.1, 88.7, 72.9, 90.5]
+
+# Sorting using Selection Sort
+selection_sort(percentage_array.copy())
+print("Sorted array using Selection Sort:", percentage_array)
+
+# Sorting using Bubble Sort
+bubble_sort(percentage_array.copy())
+print("Sorted array using Bubble Sort:", percentage_array)
+
+# Displaying top five scores
+top_five_scores = percentage_array[-5:]
+print("Top five scores:", top_five_scores)
