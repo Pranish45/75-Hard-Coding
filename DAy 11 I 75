@@ -1,0 +1,5 @@
+text = "Python is Amazing"
+if text.find("Apple"):
+    print("Found c++")
+else:
+    print("c++ not found")
